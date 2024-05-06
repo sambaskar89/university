@@ -1,0 +1,78 @@
+
+nav{
+    width: 100%;
+    /*background: #333;*/
+    color: #fff;
+    padding: 5px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    z-index: 10;
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+
+.logo {
+    width: 90px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+    .dark-background{
+    background-color: purple;
+  }
+/*---regarding media query class---*/
+  .hamburger-icon{
+    display: none;
+  }
+
+/*-----media query-----*/
+@media (max-width: 1000px){
+    .logo{
+        width: 60px;
+    }
+    nav ul li{
+        padding: 0px 15px;
+    }
+}
+/* for smaller screens---*/
+  @media (max-width: 840px){
+    nav ul{
+    position:fixed;
+    top:0;
+    right:0;
+    bottom: 0;
+    background:purple;
+    z-index: -1;
+    width:200px;
+    padding-top: 70px;
+    transition: 0.5s;
+    text-align: center;
+}
+nav ul li{
+    display: block;
+    margin: 25px 40px;
+}
+.btn{
+    padding: 5px 20px;
+}
+/*---mela above media query display none kuduthurukom---*/
+.hamburger-icon{
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+
+  /*----usestate use panni Ul la classname add pannirukom hamburger menus hide panna*/
+  .hide-hamburger-menu{
+    right: -200px;
+  }
+
+}

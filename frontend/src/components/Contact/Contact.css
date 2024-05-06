@@ -1,0 +1,111 @@
+.contact{
+    max-width: 90%;
+    margin: 80px auto;
+    display: flex;
+    align-items: flex-start; /* Align items to start from the same height */
+    justify-content: space-between;
+}
+.contact-mycol{
+
+    flex-basis: 46%; /* instead of width we are giving flex basis. it will occupy the parent container width and remaining space will be allocated to other flex items.*/
+    flex: 1; /* Take up equal space */
+    color: #676767;
+   
+}
+
+.contact-mycol h3{
+    color: #000F38;
+    font-size: 24px;
+    font-weight: 500;
+    display: flex; /*inside h3 only there is a img tag so img tag is flex item*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+.contact-mycol h3 img{
+    width: 30px; /* Adjust the width as needed */
+   height: auto; /* Adjust the height as needed */
+   margin-left: 10px;
+}
+.contact-mycol p{
+   max-width: 550px;
+   line-height: 1.5;
+   margin-bottom: 20px;
+   text-align: justify;
+}
+.contact-mycol ul {
+    list-style: none;
+   margin-top: 50px;
+  }
+  
+.contact-mycol li {
+    font-size: 16px;
+    margin-bottom: 24px;
+   
+  }
+
+  /*form css*/
+
+  form {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 5px;
+  
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .contact form input, .contact form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    resize: vertical;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  .contact form button{
+    background-color:purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .contact form button:hover {
+    background-color: #0056b3;
+  }
+
+  
+/*------media query-----*/
+ @media (max-width: 700px){
+  .contact{
+    display: block;
+  }
+  .contact-mycol{
+    padding: 20px;
+  }
+  .contact-mycol h3{
+    font-size: 20px;
+  }
+  .contact-mycol h3 img{
+    width: 25px;
+  }
+  .contact-mycol p{
+    font-size: 15px;
+  }
+  .contact-mycol li {
+    font-size: 15px;
+  }
+  label{
+    font-size: 15px;
+  }
+ }

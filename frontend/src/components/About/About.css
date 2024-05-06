@@ -1,0 +1,65 @@
+.about{
+    width: 90%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.about-left img{
+      max-width: 100%;
+      height: auto;
+}
+
+.about-left {
+ position: relative; /* this position kept for icon center*/
+    flex-basis: 40%; /*gap between image and text area*/
+}
+
+.about-right{
+    margin-bottom: 5px;
+    flex-basis: 56%;
+}
+.icon-class{
+    
+    font-size: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.about h3{
+    font-weight: 600;
+    font-size: 16px;
+    color:#212EA0 ;
+}
+.about h2{
+    font-size: 20px;
+    color: #000F38;
+    margin: 10px 0;
+    max-width: 400px;
+}
+
+.about p{
+    color: #676767;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+/*------media query-----*/
+@media (max-width:800px){
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about-left{
+        flex-basis: 100%;
+        margin: auto;
+        order: 2; /*---it will display below the about right content---*/
+    }
+    .about-right{
+        flex-basis: 100%;
+        margin: auto;
+    }
+}
